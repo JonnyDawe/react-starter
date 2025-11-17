@@ -1,0 +1,2749 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1924d6e7b47-layer-27",
+      "title": "High resolution vector polylines of the Antarctic coastline",
+      "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/High_resolution_vector_polylines_of_the_Antarctic_coastline/FeatureServer/1",
+      "visibility": true,
+      "itemId": "2fd2fc9955324cfda50f39dc083b811d",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 482129.106605,
+        "featureReduction": null,
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "valueExpression": "$view.scale",
+                "stops": [
+                  {
+                    "size": 1.0996753587280912,
+                    "value": 27606.353261696942
+                  },
+                  {
+                    "size": 0.5498376793640456,
+                    "value": 220850.82609357554
+                  },
+                  {
+                    "size": 0.4123782595230342,
+                    "value": 1766806.6087486043
+                  },
+                  {
+                    "size": 0.2749188396820228,
+                    "value": 14134452.869988834
+                  }
+                ]
+              }
+            ],
+            "field1": "surface",
+            "uniqueValueGroups": [
+              {
+                "classes": [
+                  {
+                    "label": "rock coastline",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        164,
+                        144,
+                        128,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "rock coastline"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "ice coastline",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        73,
+                        112,
+                        123,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "ice coastline"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "grounding line",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        73,
+                        112,
+                        123,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "grounding line"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "rock against ice shelf",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        164,
+                        144,
+                        128,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "rock against ice shelf"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "ice shelf and front",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        73,
+                        112,
+                        123,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "ice shelf and front"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "ice rumples",
+                    "symbol": {
+                      "type": "esriSLS",
+                      "color": [
+                        73,
+                        112,
+                        123,
+                        255
+                      ],
+                      "width": 0.862,
+                      "style": "esriSLSSolid"
+                    },
+                    "values": [
+                      [
+                        "ice rumples"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uniqueValueInfos": [
+              {
+                "label": "rock coastline",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    164,
+                    144,
+                    128,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "rock coastline"
+              },
+              {
+                "label": "ice coastline",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    73,
+                    112,
+                    123,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "ice coastline"
+              },
+              {
+                "label": "grounding line",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    73,
+                    112,
+                    123,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "grounding line"
+              },
+              {
+                "label": "rock against ice shelf",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    164,
+                    144,
+                    128,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "rock against ice shelf"
+              },
+              {
+                "label": "ice shelf and front",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    73,
+                    112,
+                    123,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "ice shelf and front"
+              },
+              {
+                "label": "ice rumples",
+                "symbol": {
+                  "type": "esriSLS",
+                  "color": [
+                    73,
+                    112,
+                    123,
+                    255
+                  ],
+                  "width": 0.862,
+                  "style": "esriSLSSolid"
+                },
+                "value": "ice rumples"
+              }
+            ]
+          }
+        }
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "",
+            "fieldInfos": [
+              {
+                "fieldName": "surface",
+                "isEditable": true,
+                "label": "Surface",
+                "visible": true
+              },
+              {
+                "fieldName": "sourcedate",
+                "isEditable": true,
+                "label": "Source date",
+                "visible": true
+              },
+              {
+                "fieldName": "revdate",
+                "isEditable": true,
+                "label": "Revision date",
+                "visible": true
+              },
+              {
+                "fieldName": "source",
+                "isEditable": true,
+                "label": "Source",
+                "visible": true
+              },
+              {
+                "fieldName": "lineage",
+                "isEditable": true,
+                "label": "Lineage",
+                "visible": true
+              }
+            ],
+            "title": ""
+          }
+        ],
+        "expressionInfos": [],
+        "fieldInfos": [
+          {
+            "fieldName": "FID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": false,
+            "label": "FID",
+            "visible": false
+          },
+          {
+            "fieldName": "surface",
+            "isEditable": true,
+            "label": "Surface",
+            "visible": true
+          },
+          {
+            "fieldName": "sourcedate",
+            "isEditable": true,
+            "label": "Source date",
+            "visible": true
+          },
+          {
+            "fieldName": "updater",
+            "isEditable": true,
+            "label": "updater",
+            "visible": false
+          },
+          {
+            "fieldName": "revdate",
+            "isEditable": true,
+            "label": "Revision date",
+            "visible": true
+          },
+          {
+            "fieldName": "source",
+            "isEditable": true,
+            "label": "Source",
+            "visible": true
+          },
+          {
+            "fieldName": "lineage",
+            "isEditable": true,
+            "label": "Lineage",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Length",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": false,
+            "label": "Shape__Length",
+            "visible": false
+          }
+        ],
+        "title": "{surface}"
+      }
+    },
+    {
+      "id": "18eb3ec58d4-layer-23",
+      "title": "Place name Labels",
+      "layers": [
+        {
+          "id": "1367",
+          "opacity": 0.75,
+          "title": "0_land_names",
+          "itemId": "86726b7d904840a4aaefc9c750d63f22",
+          "layerType": "VectorTileLayer",
+          "minScale": 0,
+          "maxScale": 13811093.616358,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/0_land_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1371",
+          "opacity": 0.75,
+          "title": "1_land_names",
+          "visibility": true,
+          "itemId": "30b329640b1949a8aa92ddcdd1f0f66e",
+          "layerType": "VectorTileLayer",
+          "minScale": 0,
+          "maxScale": 4254363.275246,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/1_land_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1369",
+          "opacity": 0.75,
+          "title": "1_water_names",
+          "visibility": true,
+          "itemId": "1682bcfa27604ecca7896f89621ff84b",
+          "layerType": "VectorTileLayer",
+          "maxScale": 3875258.065561,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/1_water_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1373",
+          "opacity": 0.38,
+          "title": "2_land_names",
+          "visibility": true,
+          "itemId": "c02f2021639445afbd18a2fcc49c42cf",
+          "layerType": "VectorTileLayer",
+          "minScale": 6085960.174088,
+          "maxScale": 2329968.848906,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/2_land_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1375",
+          "opacity": 0.62,
+          "title": "2_water_names",
+          "visibility": true,
+          "itemId": "85bffe80bce54e88b835194460fd7430",
+          "layerType": "VectorTileLayer",
+          "minScale": 3698190.418617,
+          "maxScale": 957029.229091,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/2_water_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1377",
+          "title": "3_land_names",
+          "visibility": true,
+          "itemId": "fce0402f0d8f4e0a8ac3eb7716a826c0",
+          "layerType": "VectorTileLayer",
+          "minScale": 3624601.713724,
+          "maxScale": 2182789.599702,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/3_land_names/VectorTileServer/resources/styles/root.json"
+        },
+        {
+          "id": "1379",
+          "title": "3_water_names",
+          "itemId": "0b6afff56ceb44fea0b6435b689ca13a",
+          "layerType": "VectorTileLayer",
+          "minScale": 4540649.544081,
+          "maxScale": 2035634.265526,
+          "styleUrl": "https://vectortileservices7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/3_water_names/VectorTileServer/resources/styles/root.json"
+        }
+      ],
+      "layerType": "GroupLayer",
+      "visibilityMode": "independent"
+    },
+    {
+      "id": "18ad1ec565b-layer-27",
+      "title": "COMNAP Antarctic Facilities",
+      "visibility": true,
+      "layers": [
+        {
+          "id": "18ad1ec58ae-layer-28",
+          "title": "Seasonal Facilities - Temporarily Closed",
+          "url": "https://overlord.pgc.umn.edu/arcgis/rest/services/reference/ant_comnap_antarctic_facilities/FeatureServer/3",
+          "visibility": false,
+          "itemId": "77e95a444681402f94011ad8756c13ac",
+          "layerType": "ArcGISFeatureLayer",
+          "popupInfo": {
+            "popupElements": [
+              {
+                "type": "fields"
+              },
+              {
+                "type": "attachments",
+                "displayType": "auto"
+              }
+            ],
+            "showAttachments": true,
+            "fieldInfos": [
+              {
+                "fieldName": "objectid",
+                "isEditable": false,
+                "label": "objectid",
+                "visible": false
+              },
+              {
+                "fieldName": "antarctic_region",
+                "isEditable": true,
+                "label": "Antarctic Region",
+                "visible": true
+              },
+              {
+                "fieldName": "date_modified",
+                "isEditable": true,
+                "label": "Date Modified",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation__meters_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Elevation (meters)",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation_datum",
+                "isEditable": true,
+                "label": "Elevation Datum",
+                "visible": true
+              },
+              {
+                "fieldName": "english_name",
+                "isEditable": true,
+                "label": "English Name",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Latitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__ddm_",
+                "isEditable": true,
+                "label": "Latitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Longitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__ddm_",
+                "isEditable": true,
+                "label": "Longitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "official_name",
+                "isEditable": true,
+                "label": "Official Name",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__additional_",
+                "isEditable": true,
+                "label": "Operator (additional)",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__primary_",
+                "isEditable": true,
+                "label": "Operator (primary)",
+                "visible": true
+              },
+              {
+                "fieldName": "peak_population",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Peak Population",
+                "visible": true
+              },
+              {
+                "fieldName": "photo_url",
+                "isEditable": true,
+                "label": "Photo URL",
+                "visible": true
+              },
+              {
+                "fieldName": "power_supply_types",
+                "isEditable": true,
+                "label": "Power Supply Types",
+                "visible": true
+              },
+              {
+                "fieldName": "record_id_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Record ID#",
+                "visible": true
+              },
+              {
+                "fieldName": "seasonality",
+                "isEditable": true,
+                "label": "Seasonality",
+                "visible": true
+              },
+              {
+                "fieldName": "status",
+                "isEditable": true,
+                "label": "Status",
+                "visible": true
+              },
+              {
+                "fieldName": "type",
+                "isEditable": true,
+                "label": "Type",
+                "visible": true
+              },
+              {
+                "fieldName": "webcam_url",
+                "isEditable": true,
+                "label": "Webcam URL",
+                "visible": true
+              },
+              {
+                "fieldName": "year_established",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Year Established",
+                "visible": true
+              }
+            ],
+            "title": "Seasonal Facilities - Temporarily Closed: {english_name}"
+          }
+        },
+        {
+          "id": "18ad1ec58b0-layer-29",
+          "title": "Year-Round Facilities - Temporarily Closed",
+          "url": "https://overlord.pgc.umn.edu/arcgis/rest/services/reference/ant_comnap_antarctic_facilities/FeatureServer/2",
+          "visibility": false,
+          "itemId": "77e95a444681402f94011ad8756c13ac",
+          "layerType": "ArcGISFeatureLayer",
+          "popupInfo": {
+            "popupElements": [
+              {
+                "type": "fields",
+                "description": "",
+                "fieldInfos": [
+                  {
+                    "fieldName": "english_name",
+                    "isEditable": true,
+                    "label": "English Name",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "official_name",
+                    "isEditable": true,
+                    "label": "Official Name",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "year_established",
+                    "format": {
+                      "digitSeparator": true,
+                      "places": 0
+                    },
+                    "isEditable": true,
+                    "label": "Year Established",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "latitude__dd_",
+                    "format": {
+                      "digitSeparator": true,
+                      "places": 2
+                    },
+                    "isEditable": true,
+                    "label": "Latitude (DD)",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "longitude__dd_",
+                    "format": {
+                      "digitSeparator": true,
+                      "places": 2
+                    },
+                    "isEditable": true,
+                    "label": "Longitude (DD)",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "operator__primary_",
+                    "isEditable": true,
+                    "label": "Operator (primary)",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "seasonality",
+                    "isEditable": true,
+                    "label": "Seasonality",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "status",
+                    "isEditable": true,
+                    "label": "Status",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "photo_url",
+                    "isEditable": true,
+                    "label": "Photo URL",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "peak_population",
+                    "format": {
+                      "digitSeparator": true,
+                      "places": 0
+                    },
+                    "isEditable": true,
+                    "label": "Peak Population",
+                    "visible": true
+                  },
+                  {
+                    "fieldName": "type",
+                    "isEditable": true,
+                    "label": "Type",
+                    "visible": true
+                  }
+                ],
+                "title": "{english_name}"
+              }
+            ],
+            "fieldInfos": [
+              {
+                "fieldName": "objectid",
+                "isEditable": false,
+                "label": "objectid",
+                "visible": false
+              },
+              {
+                "fieldName": "antarctic_region",
+                "isEditable": true,
+                "label": "Antarctic Region",
+                "visible": false
+              },
+              {
+                "fieldName": "date_modified",
+                "isEditable": true,
+                "label": "Date Modified",
+                "visible": false
+              },
+              {
+                "fieldName": "elevation__meters_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Elevation (meters)",
+                "visible": false
+              },
+              {
+                "fieldName": "elevation_datum",
+                "isEditable": true,
+                "label": "Elevation Datum",
+                "visible": false
+              },
+              {
+                "fieldName": "english_name",
+                "isEditable": true,
+                "label": "English Name",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Latitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__ddm_",
+                "isEditable": true,
+                "label": "Latitude (DDM)",
+                "visible": false
+              },
+              {
+                "fieldName": "longitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Longitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__ddm_",
+                "isEditable": true,
+                "label": "Longitude (DDM)",
+                "visible": false
+              },
+              {
+                "fieldName": "official_name",
+                "isEditable": true,
+                "label": "Official Name",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__additional_",
+                "isEditable": true,
+                "label": "Operator (additional)",
+                "visible": false
+              },
+              {
+                "fieldName": "operator__primary_",
+                "isEditable": true,
+                "label": "Operator (primary)",
+                "visible": true
+              },
+              {
+                "fieldName": "peak_population",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Peak Population",
+                "visible": true
+              },
+              {
+                "fieldName": "photo_url",
+                "isEditable": true,
+                "label": "Photo URL",
+                "visible": true
+              },
+              {
+                "fieldName": "power_supply_types",
+                "isEditable": true,
+                "label": "Power Supply Types",
+                "visible": false
+              },
+              {
+                "fieldName": "record_id_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Record ID#",
+                "visible": false
+              },
+              {
+                "fieldName": "seasonality",
+                "isEditable": true,
+                "label": "Seasonality",
+                "visible": true
+              },
+              {
+                "fieldName": "status",
+                "isEditable": true,
+                "label": "Status",
+                "visible": true
+              },
+              {
+                "fieldName": "type",
+                "isEditable": true,
+                "label": "Type",
+                "visible": true
+              },
+              {
+                "fieldName": "webcam_url",
+                "isEditable": true,
+                "label": "Webcam URL",
+                "visible": false
+              },
+              {
+                "fieldName": "year_established",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Year Established",
+                "visible": true
+              }
+            ],
+            "title": "Year-Round Facilities - Temporarily Closed: {english_name}"
+          }
+        },
+        {
+          "id": "18ad1ec58b1-layer-30",
+          "title": "Seasonal Facilities",
+          "url": "https://overlord.pgc.umn.edu/arcgis/rest/services/reference/ant_comnap_antarctic_facilities/FeatureServer/1",
+          "visibility": true,
+          "itemId": "77e95a444681402f94011ad8756c13ac",
+          "layerType": "ArcGISFeatureLayer",
+          "featureEffect": null,
+          "layerDefinition": {
+            "definitionExpression": null,
+            "drawingInfo": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriSMS",
+                  "color": [
+                    179,
+                    201,
+                    242,
+                    255
+                  ],
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "size": 4,
+                  "style": "esriSMSSquare",
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      8,
+                      58,
+                      150,
+                      171
+                    ],
+                    "width": 0.75,
+                    "style": "esriSLSSolid"
+                  }
+                }
+              }
+            }
+          },
+          "showLabels": false,
+          "popupInfo": {
+            "popupElements": [
+              {
+                "type": "fields"
+              },
+              {
+                "type": "attachments",
+                "displayType": "auto"
+              }
+            ],
+            "showAttachments": true,
+            "fieldInfos": [
+              {
+                "fieldName": "objectid",
+                "isEditable": false,
+                "label": "objectid",
+                "visible": false
+              },
+              {
+                "fieldName": "antarctic_region",
+                "isEditable": true,
+                "label": "Antarctic Region",
+                "visible": true
+              },
+              {
+                "fieldName": "date_modified",
+                "isEditable": true,
+                "label": "Date Modified",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation__meters_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Elevation (meters)",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation_datum",
+                "isEditable": true,
+                "label": "Elevation Datum",
+                "visible": true
+              },
+              {
+                "fieldName": "english_name",
+                "isEditable": true,
+                "label": "English Name",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Latitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__ddm_",
+                "isEditable": true,
+                "label": "Latitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Longitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__ddm_",
+                "isEditable": true,
+                "label": "Longitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "official_name",
+                "isEditable": true,
+                "label": "Official Name",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__additional_",
+                "isEditable": true,
+                "label": "Operator (additional)",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__primary_",
+                "isEditable": true,
+                "label": "Operator (primary)",
+                "visible": true
+              },
+              {
+                "fieldName": "peak_population",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Peak Population",
+                "visible": true
+              },
+              {
+                "fieldName": "photo_url",
+                "isEditable": true,
+                "label": "Photo URL",
+                "visible": true
+              },
+              {
+                "fieldName": "power_supply_types",
+                "isEditable": true,
+                "label": "Power Supply Types",
+                "visible": true
+              },
+              {
+                "fieldName": "record_id_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Record ID#",
+                "visible": true
+              },
+              {
+                "fieldName": "seasonality",
+                "isEditable": true,
+                "label": "Seasonality",
+                "visible": true
+              },
+              {
+                "fieldName": "status",
+                "isEditable": true,
+                "label": "Status",
+                "visible": true
+              },
+              {
+                "fieldName": "type",
+                "isEditable": true,
+                "label": "Type",
+                "visible": true
+              },
+              {
+                "fieldName": "webcam_url",
+                "isEditable": true,
+                "label": "Webcam URL",
+                "visible": true
+              },
+              {
+                "fieldName": "year_established",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Year Established",
+                "visible": true
+              }
+            ],
+            "title": "Seasonal Facilities: {english_name}"
+          }
+        },
+        {
+          "id": "18ad1ec58b1-layer-31",
+          "title": "Year-Round Facilities",
+          "url": "https://overlord.pgc.umn.edu/arcgis/rest/services/reference/ant_comnap_antarctic_facilities/FeatureServer/0",
+          "visibility": true,
+          "itemId": "77e95a444681402f94011ad8756c13ac",
+          "layerType": "ArcGISFeatureLayer",
+          "featureEffect": null,
+          "layerDefinition": {
+            "definitionExpression": null,
+            "drawingInfo": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriSMS",
+                  "color": [
+                    7,
+                    2,
+                    125,
+                    255
+                  ],
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "size": 5.5,
+                  "style": "esriSMSSquare",
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      255,
+                      255,
+                      255,
+                      153
+                    ],
+                    "width": 0.75,
+                    "style": "esriSLSSolid"
+                  }
+                }
+              }
+            }
+          },
+          "showLabels": false,
+          "popupInfo": {
+            "popupElements": [
+              {
+                "type": "fields"
+              },
+              {
+                "type": "attachments",
+                "displayType": "auto"
+              }
+            ],
+            "showAttachments": true,
+            "fieldInfos": [
+              {
+                "fieldName": "objectid",
+                "isEditable": false,
+                "label": "objectid",
+                "visible": false
+              },
+              {
+                "fieldName": "antarctic_region",
+                "isEditable": true,
+                "label": "Antarctic Region",
+                "visible": true
+              },
+              {
+                "fieldName": "date_modified",
+                "isEditable": true,
+                "label": "Date Modified",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation__meters_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Elevation (meters)",
+                "visible": true
+              },
+              {
+                "fieldName": "elevation_datum",
+                "isEditable": true,
+                "label": "Elevation Datum",
+                "visible": true
+              },
+              {
+                "fieldName": "english_name",
+                "isEditable": true,
+                "label": "English Name",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Latitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "latitude__ddm_",
+                "isEditable": true,
+                "label": "Latitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__dd_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "Longitude (DD)",
+                "visible": true
+              },
+              {
+                "fieldName": "longitude__ddm_",
+                "isEditable": true,
+                "label": "Longitude (DDM)",
+                "visible": true
+              },
+              {
+                "fieldName": "official_name",
+                "isEditable": true,
+                "label": "Official Name",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__additional_",
+                "isEditable": true,
+                "label": "Operator (additional)",
+                "visible": true
+              },
+              {
+                "fieldName": "operator__primary_",
+                "isEditable": true,
+                "label": "Operator (primary)",
+                "visible": true
+              },
+              {
+                "fieldName": "peak_population",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Peak Population",
+                "visible": true
+              },
+              {
+                "fieldName": "photo_url",
+                "isEditable": true,
+                "label": "Photo URL",
+                "visible": true
+              },
+              {
+                "fieldName": "power_supply_types",
+                "isEditable": true,
+                "label": "Power Supply Types",
+                "visible": true
+              },
+              {
+                "fieldName": "record_id_",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Record ID#",
+                "visible": true
+              },
+              {
+                "fieldName": "seasonality",
+                "isEditable": true,
+                "label": "Seasonality",
+                "visible": true
+              },
+              {
+                "fieldName": "status",
+                "isEditable": true,
+                "label": "Status",
+                "visible": true
+              },
+              {
+                "fieldName": "type",
+                "isEditable": true,
+                "label": "Type",
+                "visible": true
+              },
+              {
+                "fieldName": "webcam_url",
+                "isEditable": true,
+                "label": "Webcam URL",
+                "visible": true
+              },
+              {
+                "fieldName": "year_established",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "Year Established",
+                "visible": true
+              }
+            ],
+            "title": "Year-Round Facilities: {english_name}"
+          }
+        }
+      ],
+      "layerType": "GroupLayer",
+      "visibilityMode": "independent"
+    },
+    {
+      "id": "18cd5420469-layer-15",
+      "showLegend": false,
+      "title": "9-13 British Antarctic Territory Gazetteer",
+      "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/British_Antarctic_Territory_Gazetteer_2023/FeatureServer/4",
+      "visibility": true,
+      "itemId": "4dc1393aea224334a6bb9613708a79e1",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 953555.447551,
+        "featureReduction": null,
+        "definitionExpression": "symbology_level BETWEEN 0 AND 14",
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "name": "land feature",
+              "labelExpression": "[feature]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"feature\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 123974.892358,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  55,
+                  56,
+                  55,
+                  255
+                ],
+                "font": {
+                  "family": "Noto Sans",
+                  "size": 8.25
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": -2,
+                "angle": 0
+              },
+              "where": "feature_class IN ('nunatak','island(s)','mount','peak','ridge','rock','coast','hill(s)','mountain(s)','spur','peninsula','point','cliffs','valley','range','bluff','region','_unclassified','heights','knoll(s)','plateau','highland(s)','land','buttress','table','crag','archipelago','bastion','cape','head','ledge','promontory','beach','chain','col','corridor','edge','gap','massif','monolith','needle','outcrop(s)','pole','scree(s)','pyramid','spire(s)','station','terrace(s)','summit','territory','tooth','stump')"
+            },
+            {
+              "name": "water feature",
+              "labelExpression": "[feature]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"feature\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 720928.889535,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  34,
+                  123,
+                  201,
+                  255
+                ],
+                "font": {
+                  "family": "Noto Sans",
+                  "size": 8.25,
+                  "style": "italic"
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": -4,
+                "angle": 0
+              },
+              "where": "feature_class IN ('glacier','bay','inlet','ice-rise','strait','cove','ice-stream','ice-shelf','cirque','channel','lake','ice-front','snowfield','sound','basin','ice-piedmont','trough','ice-rumples','icefall','sea','glacier-tongue','gulf')"
+            },
+            {
+              "name": "land feature",
+              "labelExpression": "[feature]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"feature\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 114552.072981,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  55,
+                  56,
+                  55,
+                  0
+                ],
+                "font": {
+                  "family": "Noto Sans",
+                  "size": 9.75
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  0
+                ],
+                "haloSize": 1.5,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": -2,
+                "angle": 0
+              },
+              "where": "feature_class IN ('nunatak','island(s)','mount','peak','ridge','rock','coast','hill(s)','mountain(s)','spur','peninsula','point','cliffs','valley','range','bluff','region','_unclassified','heights','knoll(s)','plateau','highland(s)','land','buttress','table','crag','archipelago','bastion','cape','head','ledge','promontory','beach','chain','col','corridor','edge','gap','massif','monolith','needle','outcrop(s)','pole','scree(s)','pyramid','spire(s)','station','terrace(s)','summit','territory','tooth','stump')"
+            }
+          ],
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "CIMSymbolReference",
+              "symbol": {
+                "type": "CIMPointSymbol",
+                "symbolLayers": [
+                  {
+                    "type": "CIMVectorMarker",
+                    "enable": true,
+                    "anchorPointUnits": "Relative",
+                    "dominantSizeAxis3D": "Z",
+                    "size": 2.25,
+                    "billboardMode3D": "FaceNearPlane",
+                    "frame": {
+                      "xmin": -2,
+                      "ymin": -2,
+                      "xmax": 2,
+                      "ymax": 2
+                    },
+                    "markerGraphics": [
+                      {
+                        "type": "CIMMarkerGraphic",
+                        "geometry": {
+                          "rings": [
+                            [
+                              [
+                                0,
+                                2
+                              ],
+                              [
+                                0.35,
+                                1.97
+                              ],
+                              [
+                                0.68,
+                                1.88
+                              ],
+                              [
+                                1,
+                                1.73
+                              ],
+                              [
+                                1.29,
+                                1.53
+                              ],
+                              [
+                                1.53,
+                                1.29
+                              ],
+                              [
+                                1.73,
+                                1
+                              ],
+                              [
+                                1.88,
+                                0.68
+                              ],
+                              [
+                                1.97,
+                                0.35
+                              ],
+                              [
+                                2,
+                                0
+                              ],
+                              [
+                                1.97,
+                                -0.35
+                              ],
+                              [
+                                1.88,
+                                -0.68
+                              ],
+                              [
+                                1.73,
+                                -1
+                              ],
+                              [
+                                1.53,
+                                -1.29
+                              ],
+                              [
+                                1.29,
+                                -1.53
+                              ],
+                              [
+                                1,
+                                -1.73
+                              ],
+                              [
+                                0.68,
+                                -1.88
+                              ],
+                              [
+                                0.35,
+                                -1.97
+                              ],
+                              [
+                                0,
+                                -2
+                              ],
+                              [
+                                -0.35,
+                                -1.97
+                              ],
+                              [
+                                -0.68,
+                                -1.88
+                              ],
+                              [
+                                -1,
+                                -1.73
+                              ],
+                              [
+                                -1.29,
+                                -1.53
+                              ],
+                              [
+                                -1.53,
+                                -1.29
+                              ],
+                              [
+                                -1.73,
+                                -1
+                              ],
+                              [
+                                -1.88,
+                                -0.68
+                              ],
+                              [
+                                -1.97,
+                                -0.35
+                              ],
+                              [
+                                -2,
+                                0
+                              ],
+                              [
+                                -1.97,
+                                0.35
+                              ],
+                              [
+                                -1.88,
+                                0.68
+                              ],
+                              [
+                                -1.73,
+                                1
+                              ],
+                              [
+                                -1.53,
+                                1.29
+                              ],
+                              [
+                                -1.29,
+                                1.53
+                              ],
+                              [
+                                -1,
+                                1.73
+                              ],
+                              [
+                                -0.68,
+                                1.88
+                              ],
+                              [
+                                -0.35,
+                                1.97
+                              ],
+                              [
+                                0,
+                                2
+                              ]
+                            ]
+                          ]
+                        },
+                        "symbol": {
+                          "type": "CIMPolygonSymbol",
+                          "symbolLayers": [
+                            {
+                              "type": "CIMSolidStroke",
+                              "enable": true,
+                              "capStyle": "Round",
+                              "joinStyle": "Round",
+                              "lineStyle3D": "Strip",
+                              "miterLimit": 10,
+                              "width": 0.3,
+                              "color": [
+                                255,
+                                255,
+                                255,
+                                254
+                              ]
+                            },
+                            {
+                              "type": "CIMSolidFill",
+                              "enable": true,
+                              "color": [
+                                77,
+                                77,
+                                77,
+                                255
+                              ]
+                            }
+                          ],
+                          "angleAlignment": "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally": true,
+                    "respectFrame": true,
+                    "rotation": 0
+                  }
+                ],
+                "haloSize": 1,
+                "scaleX": 1,
+                "angleAlignment": "Display",
+                "angle": 0
+              }
+            }
+          }
+        }
+      },
+      "featureEffect": null,
+      "showLabels": true,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "{description}",
+            "fieldInfos": [
+              {
+                "fieldName": "lon",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": true,
+                "label": "lon",
+                "visible": true
+              },
+              {
+                "fieldName": "lat",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": true,
+                "label": "lat",
+                "visible": true
+              },
+              {
+                "fieldName": "accepted_at",
+                "isEditable": true,
+                "label": "accepted_at",
+                "visible": true
+              }
+            ],
+            "title": ""
+          }
+        ],
+        "expressionInfos": [],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": false,
+            "label": "OBJECTID",
+            "visible": false
+          },
+          {
+            "fieldName": "apc_id",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "apc_id",
+            "visible": false
+          },
+          {
+            "fieldName": "cga_id",
+            "isEditable": true,
+            "label": "cga_id",
+            "visible": false
+          },
+          {
+            "fieldName": "feature",
+            "isEditable": true,
+            "label": "feature",
+            "visible": false
+          },
+          {
+            "fieldName": "feature_class",
+            "isEditable": true,
+            "label": "feature_class",
+            "visible": false
+          },
+          {
+            "fieldName": "symbology_level",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "symbology_level",
+            "visible": false
+          },
+          {
+            "fieldName": "description",
+            "isEditable": true,
+            "label": "description",
+            "visible": false
+          },
+          {
+            "fieldName": "accepted_at",
+            "isEditable": true,
+            "label": "accepted_at",
+            "visible": true
+          },
+          {
+            "fieldName": "updated_at",
+            "isEditable": true,
+            "label": "updated_at",
+            "visible": false
+          },
+          {
+            "fieldName": "lon",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": true,
+            "label": "lon",
+            "visible": true
+          },
+          {
+            "fieldName": "lat",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": true,
+            "label": "lat",
+            "visible": true
+          },
+          {
+            "fieldName": "geom_point_wkt_4326",
+            "isEditable": true,
+            "label": "geom_point_wkt_4326",
+            "visible": false
+          },
+          {
+            "fieldName": "geom_point_ewkt_3031",
+            "isEditable": true,
+            "label": "geom_point_ewkt_3031",
+            "visible": false
+          }
+        ],
+        "title": "{feature}"
+      }
+    },
+    {
+      "id": "18cd5333c9d-layer-14",
+      "showLegend": false,
+      "title": "0-8 British Antarctic Territory Gazetteer",
+      "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/British_Antarctic_Territory_Gazetteer_2023/FeatureServer/4",
+      "visibility": true,
+      "itemId": "4dc1393aea224334a6bb9613708a79e1",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 4874411.203444,
+        "featureReduction": null,
+        "definitionExpression": "symbology_level BETWEEN 0 AND 8",
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "name": "land feature",
+              "labelExpression": "[feature]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"feature\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 1885704.392448,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  55,
+                  56,
+                  55,
+                  255
+                ],
+                "font": {
+                  "family": "Noto Sans",
+                  "size": 8.25
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": -4,
+                "angle": 0
+              },
+              "where": "feature_class IN ('nunatak','island(s)','mount','peak','ridge','rock','coast','hill(s)','mountain(s)','spur','peninsula','point','cliffs','valley','range','bluff','region','_unclassified','heights','knoll(s)','plateau','highland(s)','land','buttress','table','crag','archipelago','bastion','cape','head','ledge','promontory','beach','chain','col','corridor','edge','gap','massif','monolith','needle','outcrop(s)','pole','scree(s)','pyramid','spire(s)','station','terrace(s)','summit','territory','tooth','stump')"
+            },
+            {
+              "name": "water feature",
+              "labelExpression": "[feature]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"feature\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 2138366.450282,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  34,
+                  123,
+                  201,
+                  255
+                ],
+                "font": {
+                  "family": "Noto Sans",
+                  "size": 8.25,
+                  "style": "italic"
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": -4,
+                "angle": 0
+              },
+              "where": "feature_class IN ('glacier','bay','inlet','ice-rise','strait','cove','ice-stream','ice-shelf','cirque','channel','lake','ice-front','snowfield','sound','basin','ice-piedmont','trough','ice-rumples','icefall','sea','glacier-tongue','gulf')"
+            }
+          ],
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "CIMSymbolReference",
+              "symbol": {
+                "type": "CIMPointSymbol",
+                "symbolLayers": [
+                  {
+                    "type": "CIMVectorMarker",
+                    "enable": true,
+                    "anchorPointUnits": "Relative",
+                    "dominantSizeAxis3D": "Z",
+                    "size": 2.25,
+                    "billboardMode3D": "FaceNearPlane",
+                    "frame": {
+                      "xmin": -2,
+                      "ymin": -2,
+                      "xmax": 2,
+                      "ymax": 2
+                    },
+                    "markerGraphics": [
+                      {
+                        "type": "CIMMarkerGraphic",
+                        "geometry": {
+                          "rings": [
+                            [
+                              [
+                                0,
+                                2
+                              ],
+                              [
+                                0.35,
+                                1.97
+                              ],
+                              [
+                                0.68,
+                                1.88
+                              ],
+                              [
+                                1,
+                                1.73
+                              ],
+                              [
+                                1.29,
+                                1.53
+                              ],
+                              [
+                                1.53,
+                                1.29
+                              ],
+                              [
+                                1.73,
+                                1
+                              ],
+                              [
+                                1.88,
+                                0.68
+                              ],
+                              [
+                                1.97,
+                                0.35
+                              ],
+                              [
+                                2,
+                                0
+                              ],
+                              [
+                                1.97,
+                                -0.35
+                              ],
+                              [
+                                1.88,
+                                -0.68
+                              ],
+                              [
+                                1.73,
+                                -1
+                              ],
+                              [
+                                1.53,
+                                -1.29
+                              ],
+                              [
+                                1.29,
+                                -1.53
+                              ],
+                              [
+                                1,
+                                -1.73
+                              ],
+                              [
+                                0.68,
+                                -1.88
+                              ],
+                              [
+                                0.35,
+                                -1.97
+                              ],
+                              [
+                                0,
+                                -2
+                              ],
+                              [
+                                -0.35,
+                                -1.97
+                              ],
+                              [
+                                -0.68,
+                                -1.88
+                              ],
+                              [
+                                -1,
+                                -1.73
+                              ],
+                              [
+                                -1.29,
+                                -1.53
+                              ],
+                              [
+                                -1.53,
+                                -1.29
+                              ],
+                              [
+                                -1.73,
+                                -1
+                              ],
+                              [
+                                -1.88,
+                                -0.68
+                              ],
+                              [
+                                -1.97,
+                                -0.35
+                              ],
+                              [
+                                -2,
+                                0
+                              ],
+                              [
+                                -1.97,
+                                0.35
+                              ],
+                              [
+                                -1.88,
+                                0.68
+                              ],
+                              [
+                                -1.73,
+                                1
+                              ],
+                              [
+                                -1.53,
+                                1.29
+                              ],
+                              [
+                                -1.29,
+                                1.53
+                              ],
+                              [
+                                -1,
+                                1.73
+                              ],
+                              [
+                                -0.68,
+                                1.88
+                              ],
+                              [
+                                -0.35,
+                                1.97
+                              ],
+                              [
+                                0,
+                                2
+                              ]
+                            ]
+                          ]
+                        },
+                        "symbol": {
+                          "type": "CIMPolygonSymbol",
+                          "symbolLayers": [
+                            {
+                              "type": "CIMSolidStroke",
+                              "enable": true,
+                              "capStyle": "Round",
+                              "joinStyle": "Round",
+                              "lineStyle3D": "Strip",
+                              "miterLimit": 10,
+                              "width": 0.3,
+                              "color": [
+                                255,
+                                255,
+                                255,
+                                254
+                              ]
+                            },
+                            {
+                              "type": "CIMSolidFill",
+                              "enable": true,
+                              "color": [
+                                77,
+                                77,
+                                77,
+                                255
+                              ]
+                            }
+                          ],
+                          "angleAlignment": "Map"
+                        }
+                      }
+                    ],
+                    "scaleSymbolsProportionally": true,
+                    "respectFrame": true,
+                    "rotation": 0
+                  }
+                ],
+                "haloSize": 1,
+                "scaleX": 1,
+                "angleAlignment": "Display",
+                "angle": 0
+              }
+            }
+          }
+        }
+      },
+      "featureEffect": null,
+      "showLabels": true,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "{description}",
+            "fieldInfos": [
+              {
+                "fieldName": "lon",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": true,
+                "label": "lon",
+                "visible": true
+              },
+              {
+                "fieldName": "lat",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": true,
+                "label": "lat",
+                "visible": true
+              },
+              {
+                "fieldName": "accepted_at",
+                "isEditable": true,
+                "label": "accepted_at",
+                "visible": true
+              }
+            ],
+            "title": ""
+          }
+        ],
+        "expressionInfos": [],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": false,
+            "label": "OBJECTID",
+            "visible": false
+          },
+          {
+            "fieldName": "apc_id",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "apc_id",
+            "visible": false
+          },
+          {
+            "fieldName": "cga_id",
+            "isEditable": true,
+            "label": "cga_id",
+            "visible": false
+          },
+          {
+            "fieldName": "feature",
+            "isEditable": true,
+            "label": "feature",
+            "visible": false
+          },
+          {
+            "fieldName": "feature_class",
+            "isEditable": true,
+            "label": "feature_class",
+            "visible": false
+          },
+          {
+            "fieldName": "symbology_level",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "symbology_level",
+            "visible": false
+          },
+          {
+            "fieldName": "description",
+            "isEditable": true,
+            "label": "description",
+            "visible": false
+          },
+          {
+            "fieldName": "accepted_at",
+            "isEditable": true,
+            "label": "accepted_at",
+            "visible": true
+          },
+          {
+            "fieldName": "updated_at",
+            "isEditable": true,
+            "label": "updated_at",
+            "visible": false
+          },
+          {
+            "fieldName": "lon",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": true,
+            "label": "lon",
+            "visible": true
+          },
+          {
+            "fieldName": "lat",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": true,
+            "label": "lat",
+            "visible": true
+          },
+          {
+            "fieldName": "geom_point_wkt_4326",
+            "isEditable": true,
+            "label": "geom_point_wkt_4326",
+            "visible": false
+          },
+          {
+            "fieldName": "geom_point_ewkt_3031",
+            "isEditable": true,
+            "label": "geom_point_ewkt_3031",
+            "visible": false
+          }
+        ],
+        "title": "{feature}"
+      }
+    },
+    {
+      "id": "18adc3094ff-layer-10",
+      "showLegend": true,
+      "disablePopup": true,
+      "title": "British Antarctic Territory outline",
+      "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/bat_outline/FeatureServer/0",
+      "itemId": "e3b4ac4d9ca248b2b9707b3af5288cdd",
+      "layerType": "ArcGISFeatureLayer",
+      "featureEffect": null,
+      "layerDefinition": {
+        "definitionExpression": null,
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "valueExpression": "$view.scale",
+                "stops": [
+                  {
+                    "size": 1.65,
+                    "value": 48465384
+                  },
+                  {
+                    "size": 0.825,
+                    "value": 151454324
+                  },
+                  {
+                    "size": 0.4125,
+                    "value": 605817295
+                  },
+                  {
+                    "size": 0,
+                    "value": 1211634590
+                  }
+                ],
+                "target": "outline"
+              }
+            ],
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                189,
+                252,
+                235,
+                0
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  128,
+                  0,
+                  150
+                ],
+                "width": 1.65,
+                "style": "esriSLSDash"
+              },
+              "style": "esriSFSSolid"
+            }
+          }
+        }
+      },
+      "showLabels": true,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "",
+            "fieldInfos": [
+              {
+                "fieldName": "OBJECTID",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "isEditable": false,
+                "label": "OBJECTID",
+                "visible": true
+              },
+              {
+                "fieldName": "gid",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "gid",
+                "visible": true
+              },
+              {
+                "fieldName": "label",
+                "isEditable": true,
+                "label": "label",
+                "visible": true
+              },
+              {
+                "fieldName": "score",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 0
+                },
+                "isEditable": true,
+                "label": "score",
+                "visible": true
+              },
+              {
+                "fieldName": "Shape__Area",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": false,
+                "label": "Shape__Area",
+                "visible": true
+              },
+              {
+                "fieldName": "Shape__Length",
+                "format": {
+                  "digitSeparator": false,
+                  "places": 6
+                },
+                "isEditable": false,
+                "label": "Shape__Length",
+                "visible": true
+              }
+            ],
+            "title": ""
+          }
+        ],
+        "expressionInfos": [],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": false,
+            "label": "OBJECTID",
+            "visible": true
+          },
+          {
+            "fieldName": "gid",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "gid",
+            "visible": true
+          },
+          {
+            "fieldName": "label",
+            "isEditable": true,
+            "label": "label",
+            "visible": true
+          },
+          {
+            "fieldName": "score",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "score",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Area",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": false,
+            "label": "Shape__Area",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Length",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": false,
+            "label": "Shape__Length",
+            "visible": true
+          }
+        ],
+        "title": "{gid}"
+      }
+    },
+    {
+      "id": "197455c90ae-layer-81",
+      "title": "Air Photograph 2015 to 2016 Season",
+      "layers": [
+        {
+          "id": "197455c9228-layer-82",
+          "title": "Image Footprints",
+          "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/Air_Photo_Frames_2015_to_2016/FeatureServer",
+          "itemId": "89c48298535d4de4ac7e165e37370489",
+          "layerType": "ArcGISFeatureLayer",
+          "layerDefinition": {
+            "drawingInfo": {
+              "renderer": {
+                "type": "simple",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    219,
+                    48,
+                    108,
+                    33
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      133,
+                      3,
+                      3,
+                      255
+                    ],
+                    "width": 0.375,
+                    "style": "esriSLSSolid"
+                  },
+                  "style": "esriSFSSolid"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "197455c922a-layer-83",
+          "title": "Image Centers",
+          "url": "https://services7.arcgis.com/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/Air_Photo_Frame_Centres_2015_to_2016/FeatureServer",
+          "itemId": "4d0eb7c6b2454e40834256ef04d67c12",
+          "layerType": "ArcGISFeatureLayer",
+          "layerDefinition": {
+            "drawingInfo": {
+              "renderer": {
+                "type": "simple",
+                "visualVariables": [
+                  {
+                    "type": "sizeInfo",
+                    "valueExpression": "$view.scale",
+                    "stops": [
+                      {
+                        "size": 8.700000000000001,
+                        "value": 6901.588315424236
+                      },
+                      {
+                        "size": 6.96,
+                        "value": 55212.706523393885
+                      },
+                      {
+                        "size": 3.48,
+                        "value": 441701.6521871511
+                      },
+                      {
+                        "size": 1.74,
+                        "value": 3533613.2174972086
+                      }
+                    ]
+                  }
+                ],
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPointSymbol",
+                    "symbolLayers": [
+                      {
+                        "type": "CIMVectorMarker",
+                        "enable": true,
+                        "anchorPoint": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 0
+                        },
+                        "anchorPointUnits": "Relative",
+                        "dominantSizeAxis3D": "Y",
+                        "size": 6.96,
+                        "billboardMode3D": "FaceNearPlane",
+                        "frame": {
+                          "xmin": 0,
+                          "ymin": 0,
+                          "xmax": 17,
+                          "ymax": 17
+                        },
+                        "markerGraphics": [
+                          {
+                            "type": "CIMMarkerGraphic",
+                            "geometry": {
+                              "rings": [
+                                [
+                                  [
+                                    6,
+                                    11
+                                  ],
+                                  [
+                                    5.98,
+                                    17
+                                  ],
+                                  [
+                                    10.98,
+                                    17
+                                  ],
+                                  [
+                                    11,
+                                    11
+                                  ],
+                                  [
+                                    17,
+                                    11
+                                  ],
+                                  [
+                                    17,
+                                    6
+                                  ],
+                                  [
+                                    11,
+                                    6
+                                  ],
+                                  [
+                                    11,
+                                    0
+                                  ],
+                                  [
+                                    6,
+                                    0
+                                  ],
+                                  [
+                                    6,
+                                    6
+                                  ],
+                                  [
+                                    0,
+                                    5.98
+                                  ],
+                                  [
+                                    0,
+                                    10.98
+                                  ],
+                                  [
+                                    6,
+                                    11
+                                  ]
+                                ]
+                              ]
+                            },
+                            "symbol": {
+                              "type": "CIMPolygonSymbol",
+                              "symbolLayers": [
+                                {
+                                  "type": "CIMSolidStroke",
+                                  "enable": true,
+                                  "capStyle": "Round",
+                                  "joinStyle": "Round",
+                                  "lineStyle3D": "Strip",
+                                  "miterLimit": 10,
+                                  "width": 0.7617657789128055,
+                                  "color": [
+                                    255,
+                                    8,
+                                    8,
+                                    255
+                                  ]
+                                },
+                                {
+                                  "type": "CIMSolidFill",
+                                  "enable": true,
+                                  "color": [
+                                    255,
+                                    255,
+                                    255,
+                                    255
+                                  ]
+                                }
+                              ],
+                              "angleAlignment": "Map"
+                            }
+                          }
+                        ],
+                        "respectFrame": true,
+                        "rotation": 315
+                      }
+                    ],
+                    "haloSize": 1,
+                    "scaleX": 1,
+                    "angleAlignment": "Display",
+                    "angle": 315
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "layerType": "GroupLayer"
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "184cccd8477-layer-2",
+        "title": "Antarctica and the Southern Ocean",
+        "url": "https://tiles.arcgis.com/tiles/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/Antarctica_and_the_Southern_Ocean/MapServer",
+        "itemId": "9d587612569a4f9b8acdfd528cebf7c2",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "minScale": 113075622.959911,
+        "maxScale": 110425.413047
+      },
+      {
+        "id": "18eb3f5173e-layer-24",
+        "title": "Hillshade for British Antarctic Territory",
+        "url": "https://tiles.arcgis.com/tiles/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/Hillshade_for_BAT/MapServer",
+        "itemId": "3153ba7a535b491ca8e3559c4b922a1a",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "minScale": 627617.617943
+      },
+      {
+        "id": "18f10d8ab87-layer-41",
+        "title": "Hillshade of South Georgia EPSG 3031",
+        "url": "https://tiles.arcgis.com/tiles/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/South_Georgia_Hillshade_EPSG_3031/MapServer",
+        "itemId": "7af8a136533c4d70a9e8116591058694",
+        "layerType": "ArcGISTiledMapServiceLayer",
+        "minScale": 3533613.217497
+      },
+      {
+        "id": "19224633504-layer-25",
+        "title": "Medium resolution vector contours for Antarctica",
+        "itemId": "2d75ed9126eb4eb18f5e1c6bc90226af",
+        "layerType": "VectorTileLayer",
+        "minScale": 4874802.961031,
+        "maxScale": 630085.184934,
+        "styleUrl": "https://tiles.arcgis.com/tiles/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/add_contours_medium_res_v7_3_vt/VectorTileServer/resources/styles/root.json"
+      },
+      {
+        "id": "19224633fd5-layer-26",
+        "title": "High resolution vector contours for Antarctica",
+        "itemId": "8b0ccc58e40b40688b60155d93fb5fb8",
+        "layerType": "VectorTileLayer",
+        "minScale": 479878.086999,
+        "maxScale": 0,
+        "styleUrl": "https://tiles.arcgis.com/tiles/tPxy1hrFDhJfZ0Mf/arcgis/rest/services/add_contours_high_res_v7_3_vt/VectorTileServer/resources/styles/root.json"
+      }
+    ],
+    "title": "Antarctica and the Southern Ocean"
+  },
+  "authoringApp": "ArcGISMapViewer",
+  "authoringAppVersion": "2025.1",
+  "initialState": {
+    "viewpoint": {
+      "scale": 3533613.2174972086,
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3031,
+          "wkid": 3031
+        },
+        "xmin": -2672301.580476286,
+        "ymin": 639841.6871959923,
+        "xmax": -1632651.599035019,
+        "ymax": 1356938.3920210388
+      }
+    }
+  },
+  "spatialReference": {
+    "latestWkid": 3031,
+    "wkid": 3031
+  },
+  "timeZone": "system",
+  "version": "2.33"
+}

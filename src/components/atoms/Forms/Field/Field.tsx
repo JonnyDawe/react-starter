@@ -1,0 +1,101 @@
+'use client';
+import type { FieldErrorProps, GroupProps, InputProps, LabelProps, TextAreaProps, TextProps } from 'react-aria-components';
+import React from 'react';
+import {
+  composeRenderProps,
+
+  Group,
+
+  FieldError as RACFieldError,
+  Input as RACInput,
+  Label as RACLabel,
+  TextArea as RACTextArea,
+  Text,
+
+} from 'react-aria-components';
+
+import { cn } from '@/lib/helpers/tailwind-utils';
+import {
+  descriptionStyles,
+  fieldErrorStyles,
+  fieldGroupStyles,
+  labelStyles,
+  textAreaStyles,
+} from '@/styles/recipes/fieldRecipes';
+
+export function Label({
+  children,
+  hint,
+  className,
+  ...props
+}: LabelProps & { hint?: 'required' | 'optional' }) {
+  return (
+    <RACLabel
+      {...props}
+      className={labelStyles({
+        className,
+        requiredHint: hint === 'required',
+      })}
+    >
+      {children}
+      {hint === 'optional' && (
+        <span className="ms-auto ps-0.5 font-normal text-gray-11">Optional</span>
+      )}
+    </RACLabel>
+  );
+}
+
+export function Description(props: TextProps) {
+  return (
+    <Text
+      {...props}
+      slot="description"
+      className={descriptionStyles({ className: props.className })}
+    />
+  );
+}
+
+export function FieldError(props: FieldErrorProps) {
+  return (
+    <RACFieldError
+      {...props}
+      className={composeRenderProps(props.className, (className, renderProps) =>
+        fieldErrorStyles({ ...renderProps, className }),
+      )}
+    />
+  );
+}
+
+export function FieldGroup(props: GroupProps) {
+  return (
+    <Group
+      {...props}
+      className={composeRenderProps(props.className, (className, renderProps) =>
+        fieldGroupStyles({ ...renderProps, className }),
+      )}
+    />
+  );
+}
+
+export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  return (
+    <RACInput
+      {...props}
+      ref={ref}
+      className={composeRenderProps(props.className, (className) =>
+        cn('min-w-0 flex-1 px-2 outline-0', className),
+      )}
+    />
+  );
+});
+
+export function TextArea(props: TextAreaProps) {
+  return (
+    <RACTextArea
+      {...props}
+      className={composeRenderProps(props.className, (className, renderProps) =>
+        textAreaStyles({ ...renderProps, className }),
+      )}
+    />
+  );
+}

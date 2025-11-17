@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Environment Settings
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // Module Settings (Bundler mode)
+    "moduleDetection": "force",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    // Path Mapping
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "allowImportingTsExtensions": true,
+
+    // Type Checking
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Emit
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Interop Constraints
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "eslint.config.js", "vite.config.js"]
+}

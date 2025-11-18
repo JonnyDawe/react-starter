@@ -21,6 +21,10 @@ const checkboxStyles = appTwVariants({
     isSelected: {
       false: 'text-fg/90',
     },
+    isDisabled: {
+      true:
+         'cursor-not-allowed',
+    },
   },
 });
 
@@ -52,6 +56,7 @@ const BoxRecipe = appTwVariants({
         check: 'block',
       },
     },
+
   },
   compoundVariants: [
     {

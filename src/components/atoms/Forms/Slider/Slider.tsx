@@ -11,7 +11,6 @@ import { Label } from '@/components/atoms/Forms/Field';
 
 import { appTwVariants, composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
 import { focusRing } from '@/styles/recipes/focusRing';
-import '@/styles/slider.css';
 
 const trackStyles = appTwVariants({
   base: 'relative h-[24px] w-full',

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { CloseButton } from '@/components/atoms/Button';
 import { appTwVariants } from '@/lib/helpers/tailwind-utils';
-import { useCallbackRef } from '@/lib/hooks/useCallbackRef';
+import { useCallbackRef } from '@/lib/hooks/common/useCallbackRef';
 
 import { Title } from '../Typography';
 

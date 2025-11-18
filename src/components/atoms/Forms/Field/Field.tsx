@@ -17,8 +17,10 @@ import {
 import { cn } from '@/lib/helpers/tailwind-utils';
 import {
   descriptionStyles,
+  fieldBorderStyles,
   fieldErrorStyles,
   fieldGroupStyles,
+  inputStyles,
   labelStyles,
   textAreaStyles,
 } from '@/styles/recipes/fieldRecipes';
@@ -70,9 +72,10 @@ export function FieldGroup(props: GroupProps) {
   return (
     <Group
       {...props}
-      className={composeRenderProps(props.className, (className, renderProps) =>
-        fieldGroupStyles({ ...renderProps, className }),
-      )}
+      className={composeRenderProps(props.className, (className, renderProps) => {
+        console.log(renderProps);
+        return cn(fieldGroupStyles({ ...renderProps }), fieldBorderStyles({ ...renderProps }), className);
+      })}
     />
   );
 }
@@ -83,7 +86,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
       {...props}
       ref={ref}
       className={composeRenderProps(props.className, (className) =>
-        cn('min-w-0 flex-1 px-2 outline-0', className),
+        inputStyles({ className }),
       )}
     />
   );

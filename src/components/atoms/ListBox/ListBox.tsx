@@ -1,11 +1,11 @@
 import type { ListBoxProps as AriaListBoxProps, ListBoxItemProps, SectionProps } from 'react-aria-components';
 import {
-  ListBox as AriaListBox,
-  ListBoxItem as AriaListBoxItem,
-
   Collection,
   composeRenderProps,
+
   Header,
+  ListBoxItem as ListBoxItemPrimitive,
+  ListBox as ListBoxPrimitive,
 
   ListBoxSection,
 
@@ -13,21 +13,21 @@ import {
 
 import { Text } from '@/components/atoms/Typography';
 import { composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
-import { listBoxItemStyles, selectListDropdownItemStyles } from '@/styles/recipes/listbox';
+import { listBoxItemStyles } from '@/styles/recipes/listbox';
 
 type ListBoxProps<T> = Omit<AriaListBoxProps<T>, 'layout' | 'orientation'>;
 
 export function ListBox<T extends object>({ children, ...props }: ListBoxProps<T>) {
   return (
-    <AriaListBox
+    <ListBoxPrimitive
       {...props}
       className={composeTailwindRenderProps(
         props.className,
-        'rounded-sm border border-app-border bg-white shadow-sm',
+        'rounded-sm border border-app-border bg-white p-1',
       )}
     >
       {children}
-    </AriaListBox>
+    </ListBoxPrimitive>
   );
 }
 
@@ -35,11 +35,9 @@ export function ListBoxItem(props: ListBoxItemProps) {
   const textValue
     = props.textValue || (typeof props.children === 'string' ? props.children : undefined);
   return (
-    <AriaListBoxItem {...props} textValue={textValue} className={listBoxItemStyles}>
-      {composeRenderProps(props.children, (children) => (
-        <>{children}</>
-      ))}
-    </AriaListBoxItem>
+    <ListBoxItemPrimitive {...props} textValue={textValue} className={listBoxItemStyles}>
+      {props.children}
+    </ListBoxItemPrimitive>
   );
 }
 
@@ -47,13 +45,13 @@ export function DropdownItem(props: ListBoxItemProps) {
   const textValue
     = props.textValue || (typeof props.children === 'string' ? props.children : undefined);
   return (
-    <AriaListBoxItem {...props} textValue={textValue} className={selectListDropdownItemStyles}>
+    <ListBoxItemPrimitive {...props} textValue={textValue} className={listBoxItemStyles}>
       {composeRenderProps(props.children, (children, { isSelected }) => (
         <Text bold={isSelected} className="text-inherit">
           {children}
         </Text>
       ))}
-    </AriaListBoxItem>
+    </ListBoxItemPrimitive>
   );
 }
 

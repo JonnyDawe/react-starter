@@ -7,7 +7,7 @@ import {
 } from 'react-aria-components';
 
 import { cn } from '@/lib/helpers/tailwind-utils';
-import useIsMobile from '@/lib/hooks/useIsMobile';
+import useIsMobile from '@/lib/hooks/common/useIsMobile';
 import { tooltipRecipe } from '@/styles/recipes/tooltip';
 
 export interface TooltipProps extends Omit<AriaTooltipProps, 'children'> {

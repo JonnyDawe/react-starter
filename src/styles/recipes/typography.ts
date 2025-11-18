@@ -46,10 +46,10 @@ export const textRecipe = appTwVariants({
 
 export const linkRecipe = appTwVariants({
   extend: textRecipe,
-  base: 'text-underline-offset-2 text-decoration-color-fg hover:text-decoration-color-fg-accent cursor-pointer',
+  base: 'text-underline-offset-2 decoration-muted hover:decoration-accent cursor-pointer',
   variants: {
     underline: {
-      true: 'text-underline-offset-2 text-decoration-color-fg hover:text-decoration-color-fg-accent underline',
+      true: 'underline',
     },
     isFocusVisible: {
       true: 'inset-focus-ring outline-offset-2',

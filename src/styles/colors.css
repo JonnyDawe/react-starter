@@ -149,3 +149,64 @@
   --bright-blue: #4B87FF;
   --dark-gray: #383838; 
 }
+
+/* Accent Component Utilities */
+@utility bg-accent-app {
+  @apply bg-accent-1;
+}
+
+@utility bg-accent-subtle {
+  @apply bg-accent-2;
+}
+
+@utility bg-accent-ui {
+  @apply bg-accent-3 hover:bg-accent-4 active:bg-accent-5;
+}
+
+@utility bg-accent-ghost {
+  @apply bg-transparent hover:bg-accent-3 active:bg-accent-4;
+}
+
+@utility bg-accent-action {
+  @apply bg-accent-4 hover:bg-accent-5 active:bg-accent-6;
+}
+
+@utility bg-accent-solid {
+  @apply bg-accent-9 hover:bg-accent-10;
+}
+
+@utility border-accent-dim {
+  @apply border-accent-6;
+}
+
+@utility border-accent-normal {
+  @apply border-accent-7 hover:border-accent-8;
+}
+
+@utility divide-accent-dim {
+  @apply divide-accent-6;
+}
+
+@utility divide-accent-normal {
+  @apply divide-accent-7 hover:divide-accent-8;
+}
+
+@utility text-accent-dim {
+  @apply text-accent-11;
+}
+
+@utility text-accent-normal {
+  @apply text-accent-12;
+}
+
+@utility bg-app {
+  @apply bg-gray-1;
+}
+
+@utility bg-panel {
+  @apply bg-gray-2;
+}
+
+@utility text-fg {
+  @apply text-gray-12;
+}

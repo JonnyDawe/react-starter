@@ -1,118 +1,60 @@
-import type { SelectProps as AriaSelectProps, Key, ListBoxItemProps, ValidationResult } from 'react-aria-components';
-import type { DropdownSectionProps } from '../ListBox';
+import type { SelectProps as AriaSelectProps, ValidationResult } from 'react-aria-components';
 
 import React from 'react';
 import {
-  Select as AriaSelect,
-
   Button,
 
-  ListBox,
+  Popover,
 
-  SelectStateContext,
+  Select as SelectPrimitive, SelectStateContext,
   SelectValue,
 
 } from 'react-aria-components';
 import { appTwVariants, composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
 
-import { useControllableState } from '@/lib/hooks/common/useControllableState';
 import { Description, FieldError, FieldGroup, Label } from '../Forms/Field';
-import { DropdownItem, DropdownSection } from '../ListBox';
-import { Popover } from '../Popover';
+import { ListBox, ListBoxItem } from '../ListBox';
 import { SvgIcon } from '../SvgIcon';
 
-export interface SelectProps<T extends object> extends Omit<AriaSelectProps<T>, 'children'> {
-  label?: string
-  description?: string
-  errorMessage?: string | ((validation: ValidationResult) => string)
-  items?: Iterable<T>
-  children: React.ReactNode | ((item: T) => React.ReactNode)
-}
-
-type SelectItemType<T> = T | { value: T, label: string };
-
-interface ISelectProps<T> {
+interface ISelectProps<T extends object> extends Omit<AriaSelectProps<T>, 'children'> {
   className?: string
   label?: string
   description?: string
   errorMessage?: string | ((validation: ValidationResult) => string)
-  data: SelectItemType<T>[]
-  value?: T
-  defaultValue?: T
-  onChange?: (value: T) => void
+  children: (item: T) => React.ReactElement<React.ComponentProps<typeof ListBoxItem>>
+  items: Iterable<T>
 }
 
-function hasLabel<T>(item: SelectItemType<T>): item is { value: T, label: string } {
-  return typeof item === 'object' && item !== null && 'label' in item;
-}
-
-function normalizeItems<T>(
-  items: SelectItemType<T>[],
-): { value: T, label: string, id: string | number }[] {
-  return items.map((item, index) => {
-    if (hasLabel(item)) {
-      return { value: item.value, label: item.label, id: index };
-    }
-    return { value: item, label: String(item), id: index };
-  });
-}
-
-export function Select<T>({
+export function Select<T extends object>({
   label,
   description,
   errorMessage,
-  data,
   className,
-  value,
-  defaultValue,
-  onChange,
+  children,
+  items,
   ...props
 }: ISelectProps<T>) {
-  const normalizedItems = React.useMemo(() => normalizeItems(data), [data]);
-
-  // Use controllable state hook for value management
-  const [selectedValue, setSelectedValue] = useControllableState({
-    prop: value,
-    defaultProp: defaultValue,
-    onChange,
-  });
-
-  const selectedItem = React.useMemo(() => {
-    return normalizedItems.find((item) => item.value === selectedValue) ?? null;
-  }, [normalizedItems, selectedValue]);
-
-  // Handle selection changes
-  const handleChange = React.useCallback(
-    (selectedItem: Key | null) => {
-      setSelectedValue(normalizedItems.find((item) => item.id === selectedItem)?.value);
-    },
-    [normalizedItems, setSelectedValue],
-  );
-
-  const refId = React.useId();
-
   return (
-    <AriaSelect
+    <SelectPrimitive
       {...props}
       className={composeTailwindRenderProps(className, 'group flex flex-col gap-1')}
-      onSelectionChange={handleChange}
-      selectedKey={selectedItem === null ? null : selectedItem?.id}
-      id={refId}
     >
       {label && <Label>{label}</Label>}
       <SelectButton />
       {description && <Description>{description}</Description>}
-      <FieldError>{errorMessage}</FieldError>
-      <Popover showArrow={false} className="min-w-(--trigger-width)" refId={refId}>
-        <ListBox items={normalizedItems} className="max-h-[inherit] overflow-auto">
-          {(item) => (
-            <SelectItem id={item.id} key={item.id} textValue={item.label}>
-              {item.label}
-            </SelectItem>
-          )}
+      {errorMessage && (
+        <FieldError>
+          {(renderProps) => {
+            return typeof errorMessage === 'function' ? errorMessage(renderProps) : errorMessage;
+          }}
+        </FieldError>
+      )}
+      <Popover className="min-w-(--trigger-width)" placement="bottom start">
+        <ListBox items={items} className="max-h-[inherit] overflow-auto">
+          {children}
         </ListBox>
       </Popover>
-    </AriaSelect>
+    </SelectPrimitive>
   );
 }
 
@@ -147,10 +89,37 @@ function SelectButton() {
   );
 }
 
-export function SelectItem(props: ListBoxItemProps) {
-  return <DropdownItem {...props} />;
+interface StaticSelectProps<T extends { value: string | number, label: string }>
+  extends Omit<ISelectProps<T>, 'children' | 'value' | 'onChange'> {
+  value: T['value']
+  onChange: (value: T['value']) => void
 }
-
-export function SelectSection<T extends object>(props: DropdownSectionProps<T>) {
-  return <DropdownSection {...props} />;
+export function StaticSelect<T extends { value: string | number, label: string }>({
+  label,
+  description,
+  errorMessage,
+  className,
+  items,
+  value,
+  onChange,
+  ...props
+}: StaticSelectProps<T>) {
+  return (
+    <Select
+      className={className}
+      label={label}
+      description={description}
+      errorMessage={errorMessage}
+      items={items}
+      value={value}
+      onChange={(key) => {
+        if (key !== null) {
+          onChange(key as T['value']);
+        }
+      }}
+      {...props}
+    >
+      {(item) => <ListBoxItem id={item.value}>{item.label}</ListBoxItem>}
+    </Select>
+  );
 }

@@ -2,13 +2,11 @@
 import type { TextFieldProps as RACTextFieldProps, ValidationResult } from 'react-aria-components';
 import {
   TextField as RACTextField,
-
   Text,
-
 } from 'react-aria-components';
 
-import { composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
-import { inputStyles } from '@/styles/recipes/fieldRecipes';
+import { cn, composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
+import { fieldBorderStyles, fieldStyles, inputStyles } from '@/styles/recipes/fieldRecipes';
 
 import { FieldError, Input, Label, TextArea } from '../Field';
 
@@ -32,12 +30,22 @@ export default function TextInput({
   return (
     <RACTextField
       {...props}
-      className={composeTailwindRenderProps(className, 'flex flex-col gap-1')}
+      className={composeTailwindRenderProps(className, fieldStyles())}
     >
       <Label hint={hint}>{label}</Label>
-      <Input placeholder={placeholder} className={inputStyles} />
+      <Input
+        placeholder={placeholder}
+        className={(renderProps) => cn(
+          fieldBorderStyles ({ ...renderProps }),
+          inputStyles({ ...renderProps }),
+        )}
+      />
       {description && <Text slot="description">{description}</Text>}
-      <FieldError>{errorMessage}</FieldError>
+      <FieldError>
+        {(renderProps) => {
+          return typeof errorMessage === 'function' ? errorMessage(renderProps) : errorMessage;
+        }}
+      </FieldError>
     </RACTextField>
   );
 }

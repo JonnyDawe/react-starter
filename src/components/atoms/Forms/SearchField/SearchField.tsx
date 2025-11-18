@@ -1,13 +1,16 @@
 'use client';
 import type { SearchFieldProps, ValidationResult } from 'react-aria-components';
+import { useHotkeys } from '@mantine/hooks';
 import React, { useRef } from 'react';
-import { FieldError, SearchField, Text } from 'react-aria-components';
 
+import { FieldError, SearchField, Text } from 'react-aria-components';
 import { IconButton } from '@/components/atoms/Button';
 import { Spinner } from '@/components/atoms/Spinner/Spinner';
 import { SvgIcon } from '@/components/atoms/SvgIcon';
-import { appTwVariants, composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
 
+import { composeTailwindRenderProps } from '@/lib/helpers/tailwind-utils';
+import { useCommandKbd } from '@/lib/hooks/common/useCommandKbd';
+import { fieldStyles } from '@/styles/recipes/fieldRecipes';
 import { FieldGroup, Input, Label } from '../Field';
 
 interface MySearchFieldProps extends SearchFieldProps {
@@ -15,65 +18,65 @@ interface MySearchFieldProps extends SearchFieldProps {
   description?: string
   placeholder?: string
   errorMessage?: string | ((validation: ValidationResult) => string)
-  hint?: 'required' | 'optional'
-  useFloatingLabel?: boolean
   searchRef?: React.RefObject<HTMLDivElement | null>
   isLoading?: boolean
-  inputClassName?: string
+  fieldGroupClassName?: string
+  useKeyboardFocusShortcut?: boolean
 }
 
-const floatingLabelStyles = appTwVariants({
-  base: 'transform font-medium text-gray-12 transition-all duration-100 ease-in-out',
-  variants: {
-    floating: { true: '-translate-y-0', false: 'translate-x-9 translate-y-8' },
-  },
-});
-
-function Search({
+export function Search({
   label,
   description,
   errorMessage,
   placeholder,
   className,
-  hint,
   searchRef,
   isLoading,
-  inputClassName,
-  useFloatingLabel = false,
+  fieldGroupClassName,
+  useKeyboardFocusShortcut,
   ...props
 }: MySearchFieldProps) {
   const internalInputRef = useRef<HTMLInputElement>(null);
-  const [focused, setFocused] = React.useState(false);
-  const [internalValue, setInternalValue] = React.useState('');
-  const floating = internalValue.trim().length !== 0 || focused || undefined;
+  const commandKbd = useCommandKbd();
+
+  useHotkeys(
+    [
+      [
+        'mod+K',
+        () => {
+          if (useKeyboardFocusShortcut) {
+            internalInputRef.current?.focus();
+          }
+        },
+      ],
+    ],
+    ['INPUT', 'TEXTAREA'],
+  );
 
   return (
     <SearchField
       ref={searchRef}
       {...props}
-      onChange={(e) => {
-        setInternalValue(e);
-        props.onChange?.(e);
-      }}
-      onFocus={() => setFocused(true)}
-      onBlur={() => setFocused(false)}
-      className={composeTailwindRenderProps(className, 'group relative flex flex-col gap-1')}
+      className={composeTailwindRenderProps(className, fieldStyles())}
     >
-      <Label hint={hint} className={useFloatingLabel ? floatingLabelStyles({ floating }) : ''}>
+      <Label>
         {label}
       </Label>
-      <FieldGroup className={inputClassName}>
+      <FieldGroup className={fieldGroupClassName}>
         <SvgIcon
           name="icon-magnify-glass"
           size={20}
-          className="ml-2"
+          className="ml-2 shrink-0"
           onClick={() => internalInputRef.current?.focus()}
         />
-        <Input
-          ref={internalInputRef}
-          placeholder={useFloatingLabel ? (floating ? placeholder : '') : placeholder}
-          className="h-full text-base [&::-webkit-search-cancel-button]:hidden"
-        />
+
+        <div className="flex-1 flex">
+          <Input
+            ref={internalInputRef}
+            placeholder={`${placeholder}${useKeyboardFocusShortcut ? ` (${commandKbd}+K)` : ''}`}
+            className="h-full text-base [&::-webkit-search-cancel-button]:hidden flex-1"
+          />
+        </div>
         {isLoading && <Spinner size="sm" />}
         <IconButton
           disableTooltip
@@ -90,5 +93,3 @@ function Search({
     </SearchField>
   );
 }
-
-export default Search;

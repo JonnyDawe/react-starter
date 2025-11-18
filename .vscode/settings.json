@@ -2,6 +2,17 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
+
+  "tailwindCSS.classFunctions": ["tv", "appTwVariants"],
+
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["tv\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  "tailwindCSS.experimental.configFile": "src/styles/index.css",
+
   "files.watcherExclude": {
     "**/routeTree.gen.ts": true
   },

@@ -2,11 +2,36 @@ import { appTwVariants } from '@/lib/helpers/tailwind-utils';
 
 import { focusRing } from './focusRing';
 
+export const fieldStyles = appTwVariants({
+  base: 'group flex flex-col gap-1',
+});
+
+export const labelStyles = appTwVariants({
+  base: 'mt-1 flex min-w-max text-sm font-medium text-pretty',
+  variants: {
+    requiredHint: {
+      true: 'after:ms-0.5 after:text-accent-9 after:content-["*"]',
+    },
+  },
+});
+
+export const fieldErrorStyles = appTwVariants({
+  base: 'text-accent-10 text-sm font-medium',
+});
+
+export const descriptionStyles = appTwVariants({
+  base: 'text-sm',
+});
+
 export const fieldBorderStyles = appTwVariants({
+  extend: focusRing,
+  base: 'border rounded-sm border-app-border',
   variants: {
     isFocused: {
       true: 'border-accent-a8',
-      false: 'border-app-border',
+    },
+    isFocusWithin: {
+      true: 'border-accent-a8',
     },
     isInvalid: {
       true: 'border-2 border-accent-10',
@@ -18,48 +43,19 @@ export const fieldBorderStyles = appTwVariants({
 });
 
 export const fieldGroupStyles = appTwVariants({
-  extend: focusRing,
-  base: 'group flex h-9 min-h-9 items-center overflow-hidden rounded-sm border',
-  variants: {
-    isFocusWithin: fieldBorderStyles.variants.isFocused,
-    isInvalid: fieldBorderStyles.variants.isInvalid,
-    isDisabled: fieldBorderStyles.variants.isDisabled,
-  },
+  base: 'group flex h-9  items-center overflow-hidden',
 });
 
-export const labelStyles = appTwVariants({
-  base: 'mt-1 flex min-w-max text-base text-pretty',
-  variants: {
-    requiredHint: {
-      true: 'after:ms-0.5 after:text-accent-9 after:content-["*"]',
-    },
-  },
-});
-
-export const descriptionStyles = appTwVariants({
-  base: 'text-sm',
-});
-
-export const fieldErrorStyles = appTwVariants({
-  base: 'text-accent-10',
+export const inputContainerStyles = appTwVariants({
+  base: 'min-w-0 h-9 bg-white',
 });
 
 export const inputStyles = appTwVariants({
   extend: focusRing,
-  base: 'placeholder:text-gray-11a h-9 min-h-9 rounded-sm border px-2',
-  variants: {
-    isFocused: fieldBorderStyles.variants.isFocused,
-    isInvalid: fieldBorderStyles.variants.isInvalid,
-    isDisabled: fieldBorderStyles.variants.isDisabled,
-  },
+  base: 'placeholder:text-gray-11a placeholder:text-sm px-2 py-1.5',
 });
 
 export const textAreaStyles = appTwVariants({
   extend: focusRing,
   base: 'h-32 min-h-32 w-full rounded-sm border bg-transparent px-2 placeholder:text-gray-11',
-  variants: {
-    isFocused: fieldBorderStyles.variants.isFocused,
-    isInvalid: fieldBorderStyles.variants.isInvalid,
-    isDisabled: fieldBorderStyles.variants.isDisabled,
-  },
 });

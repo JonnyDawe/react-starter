@@ -19,24 +19,21 @@ const iconRecipe = appTwVariants({
   },
 });
 
-export const SvgIcon: React.FC<IconProps> = React.forwardRef<SVGSVGElement, IconProps>(
-  (
-    { name, size = 12, color = 'currentColor', className, style, inline = false, ...props },
-    ref,
-  ) => (
-    <svg
-      aria-hidden
-      ref={ref}
-      className={iconRecipe({ inline, className })}
-      width={size}
-      height={size}
-      fill={color}
-      style={{
-        ...style,
-      }}
-      {...props}
-    >
-      <use xlinkHref={`/svg/sprites.svg#${name}`} />
-    </svg>
-  ),
+export const SvgIcon: React.FC<IconProps> = (
+  { ref, name, size = 12, color = 'currentColor', className, style, inline = false, ...props }: IconProps & { ref?: React.RefObject<SVGSVGElement | null> },
+) => (
+  <svg
+    aria-hidden
+    ref={ref}
+    className={iconRecipe({ inline, className })}
+    width={size}
+    height={size}
+    fill={color}
+    style={{
+      ...style,
+    }}
+    {...props}
+  >
+    <use xlinkHref={`/svg/sprites.svg#${name}`} />
+  </svg>
 );

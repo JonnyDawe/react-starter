@@ -23,6 +23,6 @@ export function CloseButton({ onPress, className }: CloseButtonProps) {
 }
 
 export function CloseDialogButton({ className }: CloseButtonProps) {
-  const state = React.useContext(OverlayTriggerStateContext)!;
+  const state = React.use(OverlayTriggerStateContext)!;
   return <CloseButton onPress={() => state.close()} className={className} />;
 }

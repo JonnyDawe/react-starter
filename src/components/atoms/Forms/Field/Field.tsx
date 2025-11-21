@@ -80,7 +80,7 @@ export function FieldGroup(props: GroupProps) {
   );
 }
 
-export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+export function Input({ ref, ...props }: InputProps & { ref?: React.RefObject<HTMLInputElement | null> }) {
   return (
     <RACInput
       {...props}
@@ -90,7 +90,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
       )}
     />
   );
-});
+}
 
 export function TextArea(props: TextAreaProps) {
   return (

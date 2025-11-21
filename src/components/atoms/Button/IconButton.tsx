@@ -22,10 +22,7 @@ export type IconButtonProps = React.ComponentProps<typeof ButtonPrimitive>
     'tooltipPlacement'?: 'top' | 'right' | 'bottom' | 'left'
   };
 
-export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
-  { icon: Icon, className, disableTooltip, tooltipPlacement, ...restProps }: IconButtonProps,
-  ref,
-) => {
+export function IconButton({ ref, icon: Icon, className, disableTooltip, tooltipPlacement, ...restProps }: IconButtonProps & { ref?: React.RefObject<HTMLButtonElement | null> }) {
   const buttonElement = (
     <ButtonPrimitive
       ref={ref}
@@ -48,4 +45,4 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>((
       <Tooltip placement={tooltipPlacement ?? 'right'}>{restProps['aria-label']}</Tooltip>
     </TooltipTrigger>
   );
-});
+}

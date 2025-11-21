@@ -74,7 +74,7 @@ const selectButtonRecipe = appTwVariants({
 });
 
 function SelectButton() {
-  const state = React.useContext(SelectStateContext);
+  const state = React.use(SelectStateContext);
   if (!state) {
     return null;
   }
